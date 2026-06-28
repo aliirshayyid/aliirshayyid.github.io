@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Ali Irshayyid"
-  avatar           : "images/profile.svg"
+  avatar           : "images/profile.jpg"
   bio              : "Postdoctoral Researcher, Oakland University"
   location         : "Rochester, Michigan, USA"
   employer         : "Oakland University"

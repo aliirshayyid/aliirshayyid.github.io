@@ -7,8 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  og_image: images/profile.svg
-  teaser: images/profile.svg
+  og_image: images/profile.jpg
+  teaser: images/profile.jpg
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -104,7 +104,7 @@ Feel free to reach out at **[aliirshayyid@oakland.edu](mailto:aliirshayyid@oakla
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2023</div><img src='images/pub_platoon.svg' alt="Cooperative platoon merging control" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sensors 2023</div><img src='images/pub_platoon.png' alt="Cooperative platoon merging control" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Comparative Study of Cooperative Platoon Merging Control Based on Reinforcement Learning](https://scholar.google.com/scholar?q=Comparative+Study+of+Cooperative+Platoon+Merging+Control+Reinforcement+Learning+Irshayyid)

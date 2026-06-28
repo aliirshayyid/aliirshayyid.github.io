@@ -855,3 +855,10 @@ body {
   }
 }
 
+/* Profile avatar: crop to a clean circle regardless of photo aspect ratio */
+.author__avatar img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
