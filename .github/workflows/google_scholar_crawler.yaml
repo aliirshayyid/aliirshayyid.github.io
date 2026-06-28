@@ -1,0 +1,41 @@
+name: Get Citation Data
+
+# This workflow fetches your Google Scholar citation stats and pushes them to a
+# `google-scholar-stats` branch, which the homepage can read to show a live
+# citation badge.
+#
+# To enable it:
+#   1. Add your Scholar ID to `author.googlescholar` in _config.yml
+#   2. In the repo settings, add a secret named GOOGLE_SCHOLAR_ID with your ID
+#   3. Uncomment the `schedule` trigger below to run it automatically
+#
+# Until then it only runs manually (Actions tab -> "Get Citation Data" -> Run
+# workflow), so it won't produce failing scheduled runs.
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 8 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Reqs
+      run: |
+        sudo apt-get install python3-setuptools
+    - name: Run
+      run: |
+        cd ./google_scholar_crawler
+        pip3 install -r requirements.txt
+        python3 main.py
+        cd ./results
+        git init
+        git config --local user.name "${GITHUB_ACTOR}"
+        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+        git add *.json
+        git commit -m "Updated Citation Data"
+        git push "${remote_repo}" HEAD:google-scholar-stats --force
+      env:
+        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}

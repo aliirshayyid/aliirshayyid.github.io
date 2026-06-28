@@ -1,0 +1,43 @@
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="assets/css/academicons.css"/>
+<link rel="stylesheet" href="assets/css/accent-enhancements.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Accent enhancements: scroll-in animations + decorative top border -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Scroll-triggered fade-in for cards
+  var observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) { entry.target.classList.add('animate'); }
+    });
+  }, observerOptions);
+  document.querySelectorAll('.paper-box, .highlight-block').forEach(function(el) {
+    el.classList.add('fade-in-up');
+    observer.observe(el);
+  });
+  // Decorative gradient bar at the top of the page
+  document.body.classList.add('accent-border-top');
+});
+</script>
+
+<!-- end custom head snippets -->
