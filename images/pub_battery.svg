@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Reinforcement learning for reconfigurable battery packs">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3f7fc"/>
+      <stop offset="1" stop-color="#e3ecf7"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a4f8a"/>
+      <stop offset="1" stop-color="#012F63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g2)"/>
+  <text x="400" y="80" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#012F63" text-anchor="middle">Reconfigurable Battery Packs</text>
+  <text x="400" y="124" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="#1a4f8a" text-anchor="middle">Real-Time Balancing with Reinforcement Learning</text>
+  <!-- battery cells with varying state of charge -->
+  <g>
+    <rect x="170" y="200" width="70" height="170" rx="10" fill="#ffffff" stroke="#012F63" stroke-width="3"/>
+    <rect x="180" y="300" width="50" height="60" rx="5" fill="url(#cell)"/>
+    <rect x="270" y="200" width="70" height="170" rx="10" fill="#ffffff" stroke="#012F63" stroke-width="3"/>
+    <rect x="280" y="250" width="50" height="110" rx="5" fill="url(#cell)"/>
+    <rect x="370" y="200" width="70" height="170" rx="10" fill="#ffffff" stroke="#012F63" stroke-width="3"/>
+    <rect x="380" y="225" width="50" height="135" rx="5" fill="url(#cell)"/>
+    <rect x="470" y="200" width="70" height="170" rx="10" fill="#ffffff" stroke="#012F63" stroke-width="3"/>
+    <rect x="480" y="275" width="50" height="85" rx="5" fill="url(#cell)"/>
+    <rect x="570" y="200" width="70" height="170" rx="10" fill="#ffffff" stroke="#012F63" stroke-width="3"/>
+    <rect x="580" y="240" width="50" height="120" rx="5" fill="url(#cell)"/>
+  </g>
+  <!-- balancing arrows -->
+  <path d="M205 185 H375" stroke="#FE667B" stroke-width="4" fill="none" marker-end="url(#a)"/>
+  <path d="M605 185 H435" stroke="#FE667B" stroke-width="4" fill="none" marker-end="url(#a)"/>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#FE667B"/>
+    </marker>
+  </defs>
+  <circle cx="405" cy="185" r="9" fill="#a29bfe"/>
+</svg>
