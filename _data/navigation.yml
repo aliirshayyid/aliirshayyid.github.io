@@ -12,11 +12,17 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Honors"
-    url: "/#-honors-and-awards"
+  - title: "Experience"
+    url: "/#-experience"
+
+  - title: "Projects"
+    url: "/#-projects"
 
   - title: "Education"
     url: "/#-education"
 
-  - title: "Experience"
-    url: "/#-experience"
+  - title: "Honors"
+    url: "/#-honors-and-awards"
+
+  - title: "Service"
+    url: "/#-leadership-and-service"

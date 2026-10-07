@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Ali Irshayyid"
-description              : "Postdoctoral Researcher at Oakland University working on reinforcement learning for autonomous vehicles and battery management systems."
+description              : "Postdoctoral Researcher at Oakland University working on reinforcement learning, battery management systems, and autonomous vehicles."
 repository               : "aliirshayyid/aliirshayyid.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,10 +24,10 @@ author:
   name             : "Ali Irshayyid"
   avatar           : "images/profile.jpg"
   bio              : "Postdoctoral Researcher, Oakland University"
-  location         : "Rochester, Michigan, USA"
+  location         : "Rochester Hills, MI, USA"
   employer         : "Oakland University"
   pubmed           :
-  googlescholar    : # e.g., "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
+  googlescholar    : "https://scholar.google.com/citations?user=al4hC8AAAAAJ"
   email            : "aliirshayyid@oakland.edu"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "ali-irshayyid-967378127"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :

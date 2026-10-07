@@ -862,3 +862,31 @@ body {
   object-position: center top;
 }
 
+/* Paper cards without a figure: no figure padding, text uses the full card width */
+.paper-box.no-image {
+  padding: 0;
+}
+
+.paper-box.no-image .paper-box-text {
+  max-width: 100%;
+  padding: 1.4rem 2rem;
+}
+
+.paper-box.no-image .paper-box-text > :last-child {
+  margin-bottom: 0;
+}
+
+/* Inline venue badge for figure-less paper cards */
+.paper-box .venue-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FE667B 0%, #ff8599 100%);
+  color: #ffffff !important;
+  padding: 0.35em 0.9em;
+  border-radius: 20px;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(254, 102, 123, 0.25);
+}
+
