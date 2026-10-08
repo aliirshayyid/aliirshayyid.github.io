@@ -1,0 +1,290 @@
+# Publications shown (and filterable) on the homepage, newest first.
+#
+# Fields:
+#   title, authors, venue      required
+#   venue_prefix               optional word before the venue (e.g. "in")
+#   details                    volume / pages / location / date
+#   note                       shown in bold after the details, e.g. "Accepted"
+#   badge                      short label shown on the card
+#   year                       filter: Year
+#   type                       filter: Journal | Conference | Book Chapter |
+#                              Under Review | Dissertation | Presentation
+#   topics                     filter: Topic (list)
+#   links                      list of {label, url}; the first one also links the title
+#   description                optional one-line summary
+#   image, image_alt           optional figure taken from the paper itself
+
+# ---------------------------------------------------------------- 2026
+- title: "From Scale to Real: Evaluating the Transferability of Vision-Based Distance Estimation in Autonomous Vehicles"
+  authors: "Keer Chen, Ali Irshayyid, Zhaodong Zhou, and Jun Chen"
+  venue: "IEEE Transactions on Intelligent Vehicles"
+  details: "submitted Sept. 2026"
+  badge: "Under Review · IEEE T-IV"
+  year: 2026
+  type: "Under Review"
+  topics: ["Autonomous Vehicles", "Perception & Sensing"]
+
+- title: "Privacy-Preserving Prompted Policy Search for Robotic Control"
+  authors: "Ali Irshayyid, Feng Lin, Chong Li, and Jun Chen"
+  venue: "IEEE Robotics and Automation Letters"
+  details: "submitted Aug. 2026"
+  badge: "Under Review · IEEE RA-L"
+  year: 2026
+  type: "Under Review"
+  topics: ["Reinforcement Learning", "LLMs"]
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2609.30554"
+  description: "LLM-based policy optimization for RL that outperformed PPO and TRPO for autonomous-vehicle highway control and cut prompt size by up to 80.2% and response time by 74.9% compared with state-of-the-art approaches."
+
+- title: "State-of-Health Estimation for Lithium-Ion Batteries based on Partial Discharge Curves: A Fourier Neural Operator Approach Using dQ/dV Imputation"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "IEEE Transactions on Sustainable Energy"
+  details: "submitted Aug. 2026"
+  badge: "Under Review · IEEE TSTE"
+  year: 2026
+  type: "Under Review"
+  topics: ["Battery Systems"]
+
+- title: "Highway Merging Control Using Multi-Agent Reinforcement Learning"
+  authors: "Ali Irshayyid, Jun Chen, Wen-Chiao Lin, Huirong Fu, and Chong Li"
+  venue: "IEEE Transactions on Industrial Informatics"
+  details: "revision submitted Jul. 2026"
+  badge: "Under Review · IEEE TII"
+  year: 2026
+  type: "Under Review"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+  description: "Outperformed MAPPO in final reward (converging in up to ~2× fewer updates) and raised traffic flow by up to 60.14% over a zipper-merge baseline."
+
+- title: "Real-time Balancing Control of Reconfigurable Battery Packs using Reinforcement Learning"
+  authors: "Ali Irshayyid, Wanqun Yang, and Jun Chen"
+  venue: "IEEE Transactions on Transportation Electrification"
+  details: "vol. 12, no. 4, pp. 7013–7024, Aug. 2026"
+  badge: "IEEE TTE 2026"
+  year: 2026
+  type: "Journal"
+  topics: ["Battery Systems", "Reinforcement Learning"]
+  links:
+    - label: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/11475906"
+  description: "Trained an RL balancing controller in a fast surrogate environment of a reconfigurable battery pack (98.68% accurate at 0.012% of high-fidelity simulation time). In high-fidelity simulation it reduced SOC imbalance by 74.6% versus rule-based control and 49.7% versus greedy control."
+
+- title: "Surrogate Model for Reconfigurable Battery Packs using Graph Neural Networks"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "IEEE Transactions on Industrial Informatics"
+  details: "vol. 22, no. 7, pp. 6325–6336, Jul. 2026"
+  badge: "IEEE TII 2026"
+  year: 2026
+  type: "Journal"
+  topics: ["Battery Systems", "Graph Neural Networks"]
+  links:
+    - label: "Paper"
+      url: "https://ieeexplore.ieee.org/abstract/document/11480681"
+  description: "A graph-attention surrogate built in PyTorch Geometric that runs battery-pack simulations 1,629× faster than a physics simulator, with under 2% temperature error for packs of up to 100 cells."
+
+- title: "Automated Parking Systems Using Reinforcement Learning Assisted Model Predictive Control"
+  authors: "Hussein Alawsi, Zhaodong Zhou, Ali Irshayyid, and Jun Chen"
+  venue: "IET Cyber-Systems and Robotics"
+  details: "vol. 8, no. 1, pp. 1–17, May 2026"
+  badge: "IET CSR 2026"
+  year: 2026
+  type: "Journal"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning", "MPC"]
+  links:
+    - label: "Paper"
+      url: "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/csy2.70052"
+  description: "An RL-guided parameter tuner for real-time constrained nonlinear MPC that optimizes controller cost-function weights for closed-loop parking maneuvers."
+
+- title: "Highway Platoon Merging Control using RL: A Review"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue_prefix: "in"
+  venue: "Control, Learning, and Optimization with Applications in Connected and Autonomous Vehicles"
+  details: "W. Gao, Z.-P. Jiang, and A. A. Malikopoulos, Eds., The Institution of Engineering and Technology, Jun. 2026, ISBN: 978-1837241606"
+  badge: "IET Book Chapter 2026"
+  year: 2026
+  type: "Book Chapter"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+
+- title: "Multimodal Vehicle and Tire-Embedded Sensing for Real-Time Road Surface Monitoring Using Machine Learning"
+  authors: "Ali Irshayyid, Milan Kadari, Anij Angdembe, Rutchanon Hatasen, Linda Zhu, Jun Chen, and Mihai Burzo"
+  venue: "ASME International Mechanical Engineering Congress & Exposition (IMECE)"
+  details: "Vancouver, BC, Canada, Nov. 8–12, 2026"
+  note: "Accepted"
+  badge: "ASME IMECE 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Perception & Sensing"]
+  description: "Trained a neural network on logged CAN-bus tire temperature, pressure, and speed data to classify four road-surface types in real time on a Lincoln MKZ."
+
+- title: "Zero-shot LLM Reasoning for Real-Time Cell-Level Thermal Control of EV Batteries in Cold Climates"
+  authors: "Wanqun Yang, Ali Irshayyid, Chen Wang, and Jun Chen"
+  venue: "Modeling, Estimation and Control Conference (MECC)"
+  details: "Phoenix, AZ, USA, Oct. 25–28, 2026"
+  note: "Accepted"
+  badge: "MECC 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Battery Systems", "LLMs"]
+
+- title: "Battery State-of-Health Estimation based on Partial Discharge Curves"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "IEEE Conference on Control Technology and Applications (CCTA)"
+  details: "Vancouver, BC, Canada, Aug. 12–16, 2026"
+  note: "Accepted"
+  badge: "IEEE CCTA 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Battery Systems"]
+
+- title: "Reinforcement Learning-Based Real-Time Balancing of Reconfigurable Battery Packs"
+  authors: "Ali Irshayyid, Wanqun Yang, Tingjun Lei, and Jun Chen"
+  venue: "IEEE Transportation Electrification Conference & Expo (ITEC)"
+  details: "Novi, MI, USA, Jun. 10–12, 2026"
+  badge: "IEEE ITEC 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Battery Systems", "Reinforcement Learning"]
+
+- title: "Lane Feature-Based Localization via ICP Map Alignment"
+  authors: "Briana Popa, Ali Irshayyid, and Jun Chen"
+  venue: "North American International Conference on Industrial Engineering and Operations Management"
+  details: "Milwaukee, WI, USA, Jun. 9–11, 2026"
+  badge: "IEOM 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Autonomous Vehicles", "Perception & Sensing"]
+
+- title: "LightAD: A Lightweight Vision-Based Autonomous Driving System"
+  authors: "Yunge Li, Zhaodong Zhou, Shaibal Saha, Ali Irshayyid, Keer Chen, Lanyu Xu, and Jun Chen"
+  venue: "IEEE International Conference on Mobility: Operations, Services, and Technologies (MOST)"
+  details: "Detroit, MI, USA, May 4–6, 2026"
+  badge: "IEEE MOST 2026"
+  year: 2026
+  type: "Conference"
+  topics: ["Autonomous Vehicles", "Perception & Sensing"]
+
+- title: "Designing and Validating an Automated Tone Feedback System for CSL Learners"
+  authors: "Yujie Mao, Ali Irshayyid, Hsiang-Hua Melanie Chang, and Yu Liu"
+  venue: "2026 CLTA Annual Conference"
+  details: "University of Rhode Island, Kingston, RI, May 1–3, 2026"
+  note: "Conference presentation"
+  badge: "CLTA 2026"
+  year: 2026
+  type: "Presentation"
+  topics: ["Education"]
+
+# ---------------------------------------------------------------- 2025
+- title: "Cell State-of-Charge Estimation with Limited Voltage Sensor Measurements"
+  authors: "Owais Ogdeh, Luke Nuculaj, Ali Irshayyid, Zhaodong Zhou, and Jun Chen"
+  venue: "Applied Sciences"
+  details: "vol. 15, no. 18, Art. 10127, Sep. 2025"
+  badge: "Applied Sciences 2025"
+  year: 2025
+  type: "Journal"
+  topics: ["Battery Systems"]
+  links:
+    - label: "Paper"
+      url: "https://www.mdpi.com/2076-3417/15/18/10127"
+
+- title: "RL-assisted Model Predictive Control for Automated Parking Systems"
+  authors: "Hussein Alawsi, Zhaodong Zhou, Ali Irshayyid, and Jun Chen"
+  venue: "IEEE International Conference on Unmanned Systems"
+  details: "Changzhou, China, Sep. 18–19, 2025"
+  badge: "IEEE ICUS 2025"
+  year: 2025
+  type: "Conference"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning", "MPC"]
+
+- title: "GNN-Based Surrogate Model for Reconfigurable Battery Packs"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "IEEE Conference on Control Technology and Applications (CCTA)"
+  details: "San Diego, CA, USA, Aug. 25–27, 2025"
+  badge: "IEEE CCTA 2025"
+  year: 2025
+  type: "Conference"
+  topics: ["Battery Systems", "Graph Neural Networks"]
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1109/CCTA53793.2025.11151387"
+
+- title: "An Invention Technology Teaching for Chinese Tone Teaching"
+  authors: "Yujie Mao and Ali Irshayyid"
+  venue: "2025 ACTFL Annual Convention & World Languages Expo"
+  details: "New Orleans, LA, Nov. 21–23, 2025"
+  note: "Poster presentation"
+  badge: "ACTFL 2025"
+  year: 2025
+  type: "Presentation"
+  topics: ["Education"]
+
+- title: "GNN-Based Surrogate Model for Reconfigurable Battery Packs"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "American Control Conference (ACC)"
+  details: "Denver, CO, USA, Jul. 8–10, 2025"
+  note: "Poster"
+  badge: "ACC 2025"
+  year: 2025
+  type: "Presentation"
+  topics: ["Battery Systems", "Graph Neural Networks"]
+
+# ---------------------------------------------------------------- 2024
+- title: "A Review on Reinforcement Learning-based Highway Autonomous Vehicle Control"
+  authors: "Ali Irshayyid, Jun Chen, and Guojiang Xiong"
+  venue: "Green Energy and Intelligent Transportation"
+  details: "vol. 3, no. 4, Art. 100156, Aug. 2024"
+  badge: "GEIT 2024"
+  year: 2024
+  type: "Journal"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1016/j.geits.2024.100156"
+  description: "Reviews deep reinforcement learning for highway lane changing, ramp merging, and platoon coordination, comparing problem formulations, training methods, simulation setups, and evaluation metrics."
+
+- title: "Highway Merging Control Using Multi-Agent Reinforcement Learning: Exploring Centralized and Decentralized Schemes"
+  authors: "Ali Irshayyid"
+  venue: "Ph.D. dissertation"
+  details: "Department of Electrical and Computer Engineering, Oakland University, MI, USA, Dec. 2024"
+  badge: "Ph.D. Dissertation 2024"
+  year: 2024
+  type: "Dissertation"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+  links:
+    - label: "ProQuest"
+      url: "https://www.proquest.com/docview/3160656855"
+  description: "Formulated lane-reduction merging of connected and autonomous vehicles as a Dec-POMDP and built a CTDE actor-critic framework with masked multi-head attention to handle a large, dynamic number of vehicles."
+
+# ---------------------------------------------------------------- 2023
+- title: "Comparative Study of Cooperative Platoon Merging Control Based on Reinforcement Learning"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "Sensors"
+  details: "vol. 23, no. 2, Art. 990, pp. 1–23, Jan. 2023"
+  badge: "Sensors 2023"
+  year: 2023
+  type: "Journal"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+  links:
+    - label: "Paper"
+      url: "https://www.mdpi.com/1424-8220/23/2/990"
+  description: "Trained a Maskable PPO policy for cooperative platoon merging that cut energy use by 76.7% and average jerk by 50% compared with early-merging baselines."
+  image: "images/pub_platoon.png"
+  image_alt: "Main-lane and merging-lane vehicles in a cooperative platoon merging scenario"
+
+- title: "Highway Merging Control Using Multi-Agent Reinforcement Learning"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "3rd International Conference on Computing and Machine Intelligence (ICMI)"
+  details: "2023"
+  badge: "ICMI 2023"
+  year: 2023
+  type: "Conference"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]
+
+- title: "Comparative Study of Cooperative Platoon Merging Control Based on Reinforcement Learning"
+  authors: "Ali Irshayyid and Jun Chen"
+  venue: "American Control Conference (ACC)"
+  details: "San Diego, CA, USA, May 31–Jun. 2, 2023"
+  note: "Poster"
+  badge: "ACC 2023"
+  year: 2023
+  type: "Presentation"
+  topics: ["Autonomous Vehicles", "Reinforcement Learning"]

@@ -7,10 +7,14 @@ Personal academic website built with [Jekyll](https://jekyllrb.com/) on the
 
 ## Editing the content
 
-Almost everything you'll want to change lives in two files:
+Almost everything you'll want to change lives in three files:
 
-- **`_pages/about.md`** — the whole homepage: intro, research interests, news,
-  publications, honors, education, and experience. Edit the Markdown directly.
+- **`_pages/about.md`** — the homepage: intro, research interests, news,
+  experience, projects, education, honors, and service. Edit the Markdown directly.
+- **`_data/publications.yml`** — every publication, newest first. Each entry's
+  `year`, `type`, and `topics` drive the Year / Type / Topic filter buttons
+  (`assets/js/pub-filter.js`), which are generated automatically with counts.
+  The field list is documented at the top of the file.
 - **`_config.yml`** — your name, bio, location, and the contact/social links
   shown in the left sidebar (`author:` section).
 
@@ -21,7 +25,7 @@ The top navigation bar is defined in **`_data/navigation.yml`**.
 | What | Where |
 | --- | --- |
 | Profile photo | Replace `images/profile.jpg` (referenced by `author.avatar` in `_config.yml`). |
-| Publication figures | Featured paper cards use figures taken from the papers themselves (e.g. `images/pub_platoon.png`). A card with the `no-image` class shows text only; to add a figure, use the image-card markup of the Sensors entry in `_pages/about.md`. |
+| Publication figures | Put a figure taken from the paper in `images/` and set `image:` (and `image_alt:`) on that entry in `_data/publications.yml`. Entries without an image show as text-only cards. |
 | Social links | Fill in `orcid`, `researchgate`, etc. in `_config.yml`. Blank fields are simply hidden. |
 | Citation badge | See `.github/workflows/google_scholar_crawler.yaml` to enable live Google Scholar citation counts. |
 
