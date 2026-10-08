@@ -19,8 +19,6 @@ I am a <span class="accent-text">Postdoctoral Researcher</span> in the **Electri
 
 My research spans **battery management systems**, **reinforcement learning**, **graph neural networks**, **model predictive control**, and **autonomous vehicles**. My current work focuses on intelligent battery management for reconfigurable battery packs, including reinforcement learning–based real-time balancing, graph neural network surrogate modeling, battery state-of-health estimation, and cell-level thermal control. During my Ph.D., I developed single- and multi-agent reinforcement learning methods for cooperative highway merging of connected and autonomous vehicles.
 
-I have **16 peer-reviewed publications** (6 journal articles, 9 conference papers, and 1 book chapter), including papers in *IEEE Transactions on Transportation Electrification* and *IEEE Transactions on Industrial Informatics* — see my [Google Scholar](https://scholar.google.com/citations?user=al4hC8AAAAAJ) profile. I also served as Team Lead of Oakland University's Intelligent Ground Vehicle Competition (IGVC) team, which placed **3rd in the Self-Drive category in 2025 and 2026**.
-
 Feel free to reach out at **[aliirshayyid@oakland.edu](mailto:aliirshayyid@oakland.edu)** if you'd like to discuss research or potential collaboration!
 
 <span class='anchor' id='-research-interests'></span>
